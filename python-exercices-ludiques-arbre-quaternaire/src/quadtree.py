@@ -8,7 +8,7 @@ class QuadTree:
 
     @property
     def depth(self) -> int:
-        """ Recursion depth of the quadtree"""
+        """ Parcourt les noeuds de l'arbre afin de récupéré la profondeur de l'arbre """
 
         # definition des variables utilisés dans cette property
         child = 0
@@ -39,14 +39,14 @@ class QuadTree:
 
     @staticmethod
     def fromFile(filename: str) -> QuadTree:
-        """ Open a given file, containing a textual representation of a list"""
+        """ Ouvre un fichier et crée le quadtree présent à partir d'une list"""
         with open(filename,'r',encoding='utf-8') as f:
             line = f.read()
         return QuadTree.fromList(eval(line))
 
     @staticmethod
     def fromList(data: list) -> QuadTree:
-        """ Generates a Quadtree from a list representation"""
+        """ crée un quadtree à partir d'une liste """
         liste_node = []
 
         """ 
