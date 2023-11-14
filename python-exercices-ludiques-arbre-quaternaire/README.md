@@ -1,3 +1,21 @@
+# Mon projet 
+Voici ma version de ce projet.
+Vous trouverez ci-après les consignes de l'exercice demandé.
+
+Afin de lancer le projet il faut lancer 
+
+```shell
+python __init__ 
+```
+# Explication de ma logique 
+
+Pour calculer la profondeur de l'arbre, j'ai fais le choix de comparer les profondeurs de chaque noeud de l'arbre et garder le plus grand, pour ça on parcourt chaque arbre le plus profond possible puis on remonte cette profondeur et on la compare aux autres arbres du même niveau ce qui recursivement permet de récupérer le niveau le plus profond de l'arbre 
+
+# TODO 
+
+- Ajouter la partie graphique après avoir choisi pygame ou Tkinter
+- Revoir si ma solution fonctionne avec différente solution 
+
 # Exercices ludiques en python
 
 Vous trouverez ici un ensemble d'exercices permettant de pratiquer python mais également découvrir quelques pans annexes de l'informatique en général.
